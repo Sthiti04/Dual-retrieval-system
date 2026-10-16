@@ -1,0 +1,9 @@
+sentence-transformers
+Wikipedia-API
+scikit-learn
+numpy
+pandas
+tqdm
+rank-bm25
+matplotlib
+torch
