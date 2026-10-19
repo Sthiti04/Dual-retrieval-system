@@ -28,3 +28,4 @@ MIN_WORDS = 80    # skip stubs
 MAX_WORDS = 300   # truncate so BM25 and the embedding model see the same amount of text
 MAX_DEPTH = 1     # how many subcategory levels to descend
 SEED = 42         # makes the random sample reproducible
+INDEX_WORDS = 250   # words per document seen by both engines (chosen via token_check.py)

@@ -7,3 +7,4 @@ tqdm
 rank-bm25
 matplotlib
 torch
+nltk

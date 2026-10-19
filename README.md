@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 - [x] Repository and folder structure
 - [x] Corpus
-- [ ] BM25 engine
+- [x] BM25 engine
 - [ ] Dense engine
-- [ ] Query suite and qrels
+- [ ] Query suite
 - [ ] Evaluation
