@@ -29,3 +29,26 @@ MAX_WORDS = 300   # truncate so BM25 and the embedding model see the same amount
 MAX_DEPTH = 1     # how many subcategory levels to descend
 SEED = 42         # makes the random sample reproducible
 INDEX_WORDS = 250   # words per document seen by both engines (chosen via token_check.py)
+
+# added new categories to expand the corpus 
+CATEGORIES.update({
+    "bacterial_viral_diseases": (["Category:Bacterial diseases", "Category:Viral diseases"], 200),
+    "epidemic_history":         (["Category:19th-century epidemics", "Category:20th-century     epidemics", "Category:Pandemics", "Category:Cholera outbreaks"], 100),
+    "astronauts":               (["Category:NASA astronauts", "Category:Soviet cosmonauts"], 150),
+    "astronomy_bodies":         (["Category:Asteroids", "Category:Comets", "Category:Stars"], 150),
+    "metals_corrosion":         (["Category:Corrosion", "Category:Metallurgy"], 120),
+    "element_groups":           (["Category:Nonmetals", "Category:Noble gases",
+                                  "Category:Metalloids", "Category:Halogens",
+                                  "Category:Alkali metals"], 120),
+    "computing_systems":        (["Category:Operating systems", "Category:Computer networking"], 150),
+    "history_of_computing":     (["Category:History of computing"], 100),
+    "roman_mythology":          (["Category:Roman gods"], 80),
+    "trojan_war":               (["Category:Trojan War"], 80),
+    "maps_cartography":         (["Category:Atlases", "Category:Cartography"], 100),
+    "gemstones_crystals":       (["Category:Gemstones", "Category:Crystals"], 100),
+    "indonesia_geography":      (["Category:Islands of Indonesia", "Category:Coffee"], 80),
+    "banking_finance":          (["Category:Banking"], 100),
+    "river_landforms":          (["Category:Fluvial landforms"], 100),
+    "noise_geography":          (["Category:Mountains"], 100),
+    "noise_cuisine":            (["Category:Cuisine"], 100),
+})

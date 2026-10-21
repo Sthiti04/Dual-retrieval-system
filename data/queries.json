@@ -1,0 +1,14 @@
+[
+  {
+    "qid": "q01",
+    "category": "negation",
+    "text": "lunar missions that did not carry astronauts",
+    "rule": "2 = text states the lunar mission was uncrewed; 1 = lunar mission, crew status unclear; 0 = crewed or not lunar"
+  },
+  {
+    "qid": "q02",
+    "category": "homonym",
+    "text": "apollo greek god of music",
+    "rule": "2 = article is mainly about the god Apollo; 1 = another mythology article centred on him; 0 = space program or other"
+  }
+]
