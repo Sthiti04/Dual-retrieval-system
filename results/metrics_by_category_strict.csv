@@ -1,0 +1,17 @@
+category,engine,ndcg@5,p@5,MAP(approx)
+homonym,bm25,0.956,0.9,0.831
+homonym,dense,0.929,0.9,0.804
+homonym,random,0.0,0.0,0.0
+homonym,tfidf,0.934,0.9,0.797
+identifier,bm25,0.945,0.2,1.0
+identifier,dense,0.826,0.2,1.0
+identifier,random,0.0,0.0,0.0
+identifier,tfidf,0.945,0.2,1.0
+negation,bm25,0.236,0.2,0.159
+negation,dense,0.144,0.067,0.13
+negation,random,0.0,0.0,0.0
+negation,tfidf,0.054,0.067,0.104
+temporal,bm25,0.555,0.2,0.301
+temporal,dense,0.763,0.5,0.655
+temporal,random,0.0,0.0,0.0
+temporal,tfidf,0.559,0.3,0.273

@@ -4,6 +4,7 @@ from config import DATA, INDEX_WORDS
 
 pattern = re.compile(sys.argv[1], re.I)
 limit = int(sys.argv[2]) if len(sys.argv) > 2 else 15
+titles_only = len(sys.argv) > 3 and sys.argv[3] == "titles"
 docs = [json.loads(l) for l in (DATA / "corpus.jsonl").open(encoding="utf-8")]
 hits = []
 for d in docs:
@@ -14,5 +15,8 @@ for d in docs:
 print(f"{len(hits)} docs match /{sys.argv[1]}/")
 print(dict(Counter(d["category"] for d, _, _ in hits)))
 for d, text, m in hits[:limit]:
-    s = max(0, m.start() - 80)
-    print(f'{d["doc_id"]} | {d["category"]} | {d["title"]} | ...{text[s:m.end() + 80]}...')
+    if titles_only:
+        print(f'{d["doc_id"]} | {d["category"]} | {d["title"]}')
+    else:
+        s = max(0, m.start() - 80)
+        print(f'{d["doc_id"]} | {d["category"]} | {d["title"]} | ...{text[s:m.end() + 80]}...')

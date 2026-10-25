@@ -2,13 +2,49 @@
   {
     "qid": "q01",
     "category": "negation",
-    "text": "lunar missions that did not carry astronauts",
-    "rule": "2 = text states the lunar mission was uncrewed; 1 = lunar mission, crew status unclear; 0 = crewed or not lunar"
+    "text": "chemical elements that are not metals",
+    "rule": "2 = article about one element whose text identifies it as a nonmetal, noble gas or halogen; 1 = article about a compound, group or material centred on nonmetals, an element whose text also describes metal-like behavior (for example astatine) or is a metalloid, or an element article whose text does not state its class; 0 = metal, person, general periodic table article, or unrelated"
   },
   {
     "qid": "q02",
+    "category": "negation",
+    "text": "diseases that do not spread from person to person",
+    "rule": "2 = article about a disease or its pathogen whose text states there is no, or no documented or shown, person-to-person (human-to-human) transmission; 1 = text says such transmission is rare or limited; 0 = otherwise, including articles not about a disease or pathogen"
+  },
+  {
+    "qid": "q03",
+    "category": "negation",
+    "text": "spacecraft that carried no crew",
+    "rule": "2 = article about a spacecraft, class of spacecraft, probe, lander or test flight whose text explicitly calls it uncrewed or unmanned; 1 = robotic probe, orbiter or lander with no explicit crew statement, or a launch-vehicle article whose text says it launched uncrewed payloads; 0 = crewed craft, articles covering both crewed and uncrewed programs, people, equipment, or incidental mentions of uncrewed flights"
+  },
+  {
+    "qid": "q04",
     "category": "homonym",
-    "text": "apollo greek god of music",
-    "rule": "2 = article is mainly about the god Apollo; 1 = another mythology article centred on him; 0 = space program or other"
+    "text": "atlas rocket launch vehicle",
+    "rule": "2 = article about an Atlas rocket (any variant, or an Atlas-derived system such as Atlas-Agena), an Atlas missile, an Atlas engine or stage, or a Mercury-Atlas flight; 1 = article centred on a person or object tied to a Mercury-Atlas flight, or a rocket design built around an Atlas booster; 0 = other senses of atlas, spacecraft launched on Atlas, or any passing mention of Atlas"
+  },
+  {
+    "qid": "q05",
+    "category": "homonym",
+    "text": "atlas book of maps",
+    "rule": "2 = article about a published atlas (geographic, world, historical, road or thematic, such as bird or linguistic atlases) or about the history of the atlas as a book; 1 = article about a digital or software atlas, or about cartography or a map collection that discusses atlases without being about one; 0 = rocket, mythology, star-catalogue mention, or any passing mention of an atlas"
+  },
+  {
+    "qid": "q06",
+    "category": "temporal",
+    "text": "epidemics in the 19th century",
+    "rule": "2 = article about an epidemic, pandemic or outbreak that occurred at least partly between 1801 and 1900, shown by a date or '19th century' in the text; 1 = article whose main subject is a concept, response or history tied to 19th-century epidemics (for example a medical theory or an international conference); 0 = other, including epidemics that began after 1900 and passing mentions"
+  },
+  {
+    "qid": "q07",
+    "category": "temporal",
+    "text": "cholera pandemics that began after 1860",
+    "rule": "2 = article about a cholera pandemic whose start year, after 1860, is stated in the text; 1 = article about a cholera outbreak after 1860 that is not called a pandemic, or a history article covering such periods; 0 = pandemics that started in 1860 or earlier, or other"
+  },
+  {
+    "qid": "q08",
+    "category": "identifier",
+    "text": "Mariner 4",
+    "rule": "2 = article whose main subject is the Mariner 4 mission; 1 = article that gives more than a one-sentence mention of the Mariner 4 flyby; 0 = other Mariner probes, or a one-sentence mention"
   }
 ]
