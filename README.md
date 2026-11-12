@@ -30,7 +30,6 @@ Run every script from the project root, for example `python3 src/run_engines.py`
     results/       rankings, metric tables, timing
     src/           main pipeline
     test_scripts/  sanity checks and diagnostics
-    docs/          architecture diagram
 
 ## Scripts in src/
 
@@ -118,21 +117,3 @@ Run every script from the project root, for example `python3 src/run_engines.py`
 The first command downloads the model, and `run_engines.py` encodes the corpus once (about a minute on an Apple GPU, longer on a CPU).
 
 Do not run these, because they would change the corpus or the labels: `build_corpus.py` (Wikipedia changes over time, so the committed corpus is the corpus), `merge_qrels.py`, `copy_qrels.py`.
-
-## Design choices
-
-- Every engine reads the first 250 words of each article. The embedding model accepts 512 tokens, and only 7 of 3,030 articles exceed that at 250 words.
-- BM25 keeps stopwords by default, so that words such as "not" and "after" stay in the index. The stemmed variant tests what preprocessing changes.
-- Relevance is judged only on the indexed text. Titles and Wikipedia categories are never used as labels.
-- Pooling is blind. Engine names are hidden and documents are shuffled while labelling.
-- The corpus was frozen at 3,030 articles before labelling, because any change would invalidate the labels and the cached embeddings.
-
-## Status
-
-Done: corpus, five engines, queries and labels, evaluation, failure analysis, demo.
-
-Not done: hybrid retrieval, a second embedding model, negation-aware query handling, and an agreement check between labelers.
-
-## Data attribution
-
-Article text comes from English Wikipedia (CC BY-SA 4.0).
