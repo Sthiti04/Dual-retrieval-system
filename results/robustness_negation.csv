@@ -1,0 +1,5 @@
+negated_query,tfidf_overlap@10,bm25_overlap@10,dense_overlap@10,dense_query_cosine
+chemical elements that are not metals,0.9,0.8,0.6,0.921
+programming languages without garbage collection,0.9,0.7,0.8,0.938
+diseases that do not spread from person to person,0.8,0.6,0.8,0.887
+spacecraft that carried no crew,0.8,0.9,0.7,0.87

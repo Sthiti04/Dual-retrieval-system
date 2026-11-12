@@ -13,6 +13,9 @@ elif name == "tfidf":
 elif name == "dense":
     from dense_engine import DenseEngine
     DenseEngine().index(ids, texts, use_cache=False)    # re-encodes, so encoding memory is included
+elif name == "bm25_stem":
+    from bm25_engine import BM25
+    BM25(remove_stopwords=True, stem=True).fit(ids, texts)
 elif name != "baseline":
     sys.exit("usage: memory_check.py baseline|bm25|tfidf|dense")
 rss = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss

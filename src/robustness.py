@@ -12,6 +12,7 @@ TRIALS = 5
 
 ids, titles, texts = load_corpus()
 queries = json.load((DATA / "queries.json").open(encoding="utf-8"))
+queries = [q for q in queries if q["category"] != "typo"]
 engines = {"tfidf": TfidfEngine().fit(ids, texts),
            "bm25": BM25().fit(ids, texts),
            "dense": DenseEngine().index(ids, texts)}

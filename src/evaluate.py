@@ -6,11 +6,11 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from config import DATA, RESULTS
 
-ENGINES = ["random", "tfidf", "bm25", "dense"]
-POOLED = ["tfidf", "bm25", "dense"]       # random was not pooled: its unjudged hits count as 0
+ENGINES = ["random", "tfidf", "bm25", "bm25_stem_stop", "dense"]
+POOLED = ["tfidf", "bm25", "bm25_stem_stop", "dense"]
 K = 5
 STRICT = "--strict" in sys.argv
-REL_THR = 2 if STRICT else 1              # label needed to count as relevant for P@5 and AP
+REL_THR = 2 if STRICT else 1     # label needed to count as relevant for P@5 and AP
 TAG = "strict" if STRICT else "lenient"
 
 queries = json.load((DATA / "queries.json").open(encoding="utf-8"))

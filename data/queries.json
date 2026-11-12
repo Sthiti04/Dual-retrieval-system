@@ -46,5 +46,80 @@
     "category": "identifier",
     "text": "Mariner 4",
     "rule": "2 = article whose main subject is the Mariner 4 mission; 1 = article that gives more than a one-sentence mention of the Mariner 4 flyby; 0 = other Mariner probes, or a one-sentence mention"
+  },
+  {
+    "qid": "q09",
+    "category": "negation",
+    "text": "programming languages that are not statically typed",
+    "rule": "2 = article about a programming language whose text says it is dynamically typed or has dynamic typing; 1 = text says typing is optional or gradual, or that the language mixes static and dynamic typing; 0 = statically typed, typing not mentioned, or not about a language"
+  },
+  {
+    "qid": "q10",
+    "category": "negation",
+    "text": "programming languages without garbage collection",
+    "rule": "2 = text states the language has no garbage collector or does not use garbage collection; 1 = text says memory is managed manually or by ownership rules without naming garbage collection; 0 = language has garbage collection, memory management is not mentioned, or not about a language"
+  },
+  {
+    "qid": "q11",
+    "category": "homonym",
+    "text": "computer virus infecting files",
+    "rule": "2 = article about a computer virus or worm; 1 = antivirus software, or an article centred on virus authors or virus demonstrations; 0 = biological virus or unrelated"
+  },
+  {
+    "qid": "q12",
+    "category": "homonym",
+    "text": "virus spread by mosquitoes",
+    "rule": "2 = article about a virus or viral disease whose text says mosquitoes transmit it; 1 = mosquito-borne disease not caused by a virus, or mosquito-borne transmission in general; 0 = otherwise"
+  },
+  {
+    "qid": "q13",
+    "category": "homonym",
+    "text": "apollo greek god of music",
+    "rule": "2 = article mainly about the god Apollo; 1 = myth, figure, concept or etymology centrally tied to Apollo; 0 = space program or passing mention"
+  },
+  {
+    "qid": "q14",
+    "category": "temporal",
+    "text": "programming languages created in the 1970s",
+    "rule": "2 = article about a programming language whose text gives a creation or first-release year from 1970 to 1979; 1 = article about a version, dialect or implementation whose text gives a 1970s date; 0 = other, including languages whose text gives no date"
+  },
+  {
+    "qid": "q15",
+    "category": "temporal",
+    "text": "chemical elements discovered in the 19th century",
+    "rule": "2 = article about an element whose text gives its discovery or isolation date as 1801 to 1900; 1 = article about a discoverer, or a compound article, that cites such a date; 0 = other"
+  },
+  {
+    "qid": "q16",
+    "category": "identifier",
+    "text": "CP/M",
+    "rule": "2 = article whose main subject is CP/M or one of its versions or ports; 1 = article about a system or product that the text describes as built on or compatible with CP/M, with more than a one-sentence description; 0 = one-sentence mention of CP/M, or unrelated"
+  },
+  {
+    "qid": "q17",
+    "category": "identifier",
+    "text": "RSX-11",
+    "rule": "2 = article whose main subject is RSX-11 or one of its versions; 1 = article about a system or product that the text describes as derived from or tied to RSX-11, with more than a one-sentence description; 0 = one-sentence mention of RSX-11, or unrelated"
+  },
+  {
+    "qid": "q18",
+    "category": "typo",
+    "variant_of": "q04",
+    "text": "atlsa rokcet launch vehcile",
+    "rule": "2 = article about an Atlas rocket (any variant, or an Atlas-derived system such as Atlas-Agena), an Atlas missile, an Atlas engine or stage, or a Mercury-Atlas flight; 1 = article centred on a person or object tied to a Mercury-Atlas flight, or a rocket design built around an Atlas booster; 0 = other senses of atlas, spacecraft launched on Atlas, or any passing mention of Atlas"
+  },
+  {
+    "qid": "q19",
+    "category": "typo",
+    "variant_of": "q06",
+    "text": "epidmics in the 19th centurry",
+    "rule": "2 = article about an epidemic, pandemic or outbreak that occurred at least partly between 1801 and 1900, shown by a date or '19th century' in the text; 1 = article whose main subject is a concept, response or history tied to 19th-century epidemics (for example a medical theory or an international conference); 0 = other, including epidemics that began after 1900 and passing mentions"
+  },
+  {
+    "qid": "q20",
+    "category": "typo",
+    "variant_of": "q08",
+    "text": "Marnier 4",
+    "rule": "2 = article whose main subject is the Mariner 4 mission; 1 = article that gives more than a one-sentence mention of the Mariner 4 flyby; 0 = other Mariner probes, or a one-sentence mention"
   }
 ]
