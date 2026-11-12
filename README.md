@@ -1,6 +1,6 @@
 # Robust Search: BM25 vs. Neural Retrieval under Noisy and Ambiguous Queries
 
-Information Retrieval course project. Group [fill]. Members: Sthiti Swain, Ritu Laharwani, Sarthak Shashi.
+Information Retrieval course project.Members: Sthiti Swain, Ritu Laharwani, Sarthak Shashi.
 
 ## What this project does
 
